@@ -17,7 +17,7 @@ def planteamiento_modelo():
     """Devuelve el modelo de Regresión Lineal sin entrenar."""
     return LinearRegression()
 
-def entramiento_modelo(modelo, X_train, Y_train):
+def entremiento_modelo(modelo, X_train, Y_train):
     """Entrena el modelo con los datos de entrenamiento."""
     modelo.fit(X_train, Y_train)
     return modelo
@@ -50,7 +50,7 @@ def proyeccion(modelo, nuevos_X):
     """Predice ventas para nuevos valores de publicidad."""
     nuevos_X = np.array(nuevos_X).reshape(-1, 1)
     predicciones = modelo.predict(nuevos_X)
-    print("\n📌 Nuevas proyecciones:")
+    print("\n Nuevas proyecciones:")
     for i, val in enumerate(nuevos_X):
         print(f"Gasto: {val[0]:.1f} mil $MXN → Ventas estimadas: {predicciones[i]:.2f} mil $MXN")
     return predicciones
@@ -60,7 +60,7 @@ def main():
     X, Y = carga_datos()
     X_train, X_test, Y_train, Y_test = divicion_datos(X, Y)
     modelo = planteamiento_modelo()
-    modelo = entramiento_modelo(modelo, X_train, Y_train)
+    modelo = entremiento_modelo(modelo, X_train, Y_train)
     Y_pred = evaluacion_modelo(modelo, X_test, Y_test)
     grafica(X_train, Y_train, X_test, Y_test, modelo, Y_pred)
     proyeccion(modelo, [7.0, 8.5])
