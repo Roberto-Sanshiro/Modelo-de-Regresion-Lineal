@@ -1,6 +1,6 @@
 ## 📊 Regresión Lineal Simple con Scikit-learn
 
-Este repositorio muestra cómo implementar un modelo de **Regresión Lineal Simple** en Python utilizando `scikit-learn`, una de las bibliotecas más populares para **Machine Learning**. El objetivo principal es **predecir las ventas mensuales (en miles de dólares)** en función del **gasto mensual en publicidad (también en miles de dólares)**.
+Este repositorio muestra cómo implementar un modelo de **Regresión Lineal Simple** en Python utilizando `scikit-learn`, una de las bibliotecas más populares para **Machine Learning**. El objetivo principal es predecir las ventas mensuales (en miles de dólares) en función del gasto mensual en publicidad (también en miles de dólares).
 
 Este ejemplo es **didáctico** y está diseñado para ayudar a comprender los fundamentos de los modelos lineales supervisados, su entrenamiento, evaluación y visualización.
 
