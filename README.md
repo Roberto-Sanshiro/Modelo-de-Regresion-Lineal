@@ -10,9 +10,7 @@ Este ejemplo es **didáctico** y está diseñado para ayudar a comprender los fu
 
 La regresión lineal simple intenta modelar la relación entre una variable independiente \( X \) (por ejemplo, el gasto en publicidad) y una variable dependiente \( Y \) (por ejemplo, las ventas), mediante la ecuación:
 
-\[
-Y = \beta_0 + \beta_1X + \varepsilon
-\]
+Y = β₀ + β₁X + ε
 
 Donde:
 
